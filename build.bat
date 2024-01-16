@@ -11,9 +11,9 @@ rem --------------------------------
 rem Build
 rem -------------------------------- 
 
-rem compile EFI_Main.c
-gcc -Wall -Werror -m64 -mabi=ms -ffreestanding -mno-red-zone -c src\EFI_Main.c -o bin\obj\EFI_Main.o
-gcc -Wall -Werror -m64 -mabi=ms -nostdlib -shared -Wl,-dll -Wl,--subsystem,10 -e EFI_Main bin\obj\EFI_Main.o -o bin\obj\BOOTX64.EFI
+rem compile efi_main.c
+gcc -Wall -Werror -m64 -mabi=ms -ffreestanding -mno-red-zone -c src\efi_main.c -o bin\obj\efi_main.o
+gcc -Wall -Werror -m64 -mabi=ms -nostdlib -shared -Wl,-dll -Wl,--subsystem,10 -e efi_main bin\obj\efi_main.o -o bin\obj\BOOTX64.EFI
 
 rem create os.img
 wsl dd if=/dev/zero of=bin/iso/os.img bs=1k count=1440
