@@ -7,10 +7,10 @@ A probably badly written x64 UEFI operating system, to learn how it all works.
 ## Dependencies
 
 Required packages:
-- xorriso
-- mtools
-- clang
-- llvm
+- xorriso (>= 1.5.4-2)
+- mtools (>= 4.0.33-1+really4.0.32-1build1)
+- clang (>= 1:14.0-55~exp2)
+- llvm (>= 1:14.0-55~exp2)
 
 ## Credit
 
