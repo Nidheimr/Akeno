@@ -11,6 +11,7 @@ Required packages:
 - mtools (>= 4.0.33-1+really4.0.32-1build1)
 - clang (>= 1:14.0-55~exp2)
 - llvm (>= 1:14.0-55~exp2)
+- lld (>= 16.0.6-1)
 
 ## Credit
 
