@@ -2,7 +2,7 @@
 
 ## Overview
 
-A probably badly written x64 UEFI operating system, to learn how it all works.
+A probably badly written x64 UEFI operating system, to learn how it all works. This project will probably be abandoned and never be finished.
 
 ## Dependencies
 
