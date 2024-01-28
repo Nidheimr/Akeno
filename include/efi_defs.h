@@ -1,11 +1,10 @@
-#ifndef UEFI_H
-#define UEFI_H
+#pragma once
 
 // This header is created using UEFI Specification 2.10 as a base.
 // Not everything is declared, only what is used.
 //
 // https://uefi.org/sites/default/files/resources/UEFI_Spec_2_10_Aug29.pdf 
-
+ 
 // -------------------------------- 
 //
 // Macros
@@ -17,6 +16,10 @@
 // EFI_STATUS
 #define EFI_SUCCESS                 0x0000000000000000
 #define EFI_NOT_READY               0x8000000000000006
+
+// Miscellaneous
+#define TRUE                        (BOOLEAN)1
+#define FALSE                       (BOOLEAN)0
 
 // Text attributes
 #define EFI_BLACK                   0x00
@@ -127,5 +130,3 @@ struct _EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL
     EFI_TEXT_SET_MODE       SetMode;
     EFI_TEXT_SET_ATTRIBUTE  SetAttribute;
 };
-
-#endif //UEFI_H

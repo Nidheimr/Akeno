@@ -1,5 +1,5 @@
 CROSS_COMPILER = clang
-COMMON_FLAGS   = -target x86_64-unknown-windows -I include/
+COMMON_FLAGS   = -target x86_64-unknown-windows -mabi=ms -I include/
 COMPILER_FLAGS = -ffreestanding -fshort-wchar -mno-red-zone
 LINKER_FLAGS   = -nostdlib -Wl,-entry:efi_main -Wl,-subsystem:efi_application -fuse-ld=lld-link
 

@@ -1,15 +1,17 @@
-#include "uefi.h"
+#include "efi_defs.h"
+#include "efi_libs.h"
 
-EFI_STATUS efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *SystemTable)
+EFI_STATUS efi_main(EFI_HANDLE ImageHandle, EFI_SYSTEM_TABLE *_SystemTable)
 {
-    SystemTable->ConOut->Reset(SystemTable->ConOut, 1);                         // Clear screen
-    SystemTable->ConOut->SetAttribute(SystemTable->ConOut, EFI_GREEN);          // Set print colour
-    SystemTable->ConOut->OutputString(SystemTable->ConOut, L"Hit Any Key\r\n"); // Print
-    SystemTable->ConIn->Reset(SystemTable->ConIn, 1);                           // Clear input buffer
+    SystemTable = _SystemTable;
 
-    EFI_INPUT_KEY key; // Key to be read
+    ResetOutput();
+    ResetInput();
 
-    while((SystemTable->ConIn->ReadKeyStroke(SystemTable->ConIn, &key)) == EFI_NOT_READY) {}; // Pause until a key is pressed
+    SetOutputAttribute(EFI_GREEN);
+    Print(L"Press any key to continue...", TRUE);
 
-    return EFI_SUCCESS; // Everything went right
+    WaitForKey();
+
+    return EFI_SUCCESS;
 }
