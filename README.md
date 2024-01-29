@@ -4,9 +4,18 @@
 
 A probably badly written x64 UEFI operating system, to learn how it all works. This project will probably be abandoned and never be finished.
 
-## Dependencies
+## Building
 
-Required packages:
+### Windows
+
+Using Windows Subsystem for Linux, then follow the Linux instructions.
+
+### Linux
+
+Run `make` on the provided Makefile.
+
+### Dependencies
+
 - xorriso (>= 1.5.4-2)
 - mtools (>= 4.0.33-1+really4.0.32-1build1)
 - clang (>= 1:14.0-55~exp2)
