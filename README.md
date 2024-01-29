@@ -8,11 +8,7 @@ A probably badly written x64 UEFI operating system, to learn how it all works. T
 
 ### Windows
 
-Using Windows Subsystem for Linux, then follow the Linux instructions.
-
-### Linux
-
-Run `make` on the provided Makefile.
+Using Windows Subsystem for Linux, run `make` on the provided Makefile.
 
 ### Dependencies
 
