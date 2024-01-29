@@ -2,7 +2,7 @@
 
 ## Overview
 
-A probably badly written x64 UEFI operating system, to learn how it all works. This project will probably be abandoned and never be finished.
+Akeno is an x64 UEFI operating system. This project was made for educational purposes and may not be efficient or well written.
 
 ## Building
 
