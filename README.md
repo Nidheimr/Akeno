@@ -3,6 +3,7 @@
 ## Overview
 
 Akeno is an x64 UEFI operating system. This project was made for educational purposes and may not be efficient or well written.
+To emulate, you will need to use a UEFI system. Qemu with OVMF works from my experience.
 
 ## Building
 
@@ -17,7 +18,3 @@ Using Windows Subsystem for Linux, run `make` on the provided Makefile.
 - clang (>= 1:14.0-55~exp2)
 - llvm (>= 1:14.0-55~exp2)
 - lld (>= 16.0.6-1)
-
-## Credit
-
-`deps/ovmf.fd` is not mine, it is a 64-bit debug build of OVMF from https://github.com/tianocore/edk2
