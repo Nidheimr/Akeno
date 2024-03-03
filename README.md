@@ -7,11 +7,9 @@ To emulate, you will need to use a UEFI system. Qemu with OVMF works from my exp
 
 ## Building
 
-### Windows
+As long as the below dependencies are installed, the provided `Makefile` should™ produce an ISO file.
 
-Using Windows Subsystem for Linux, run `make` on the provided Makefile.
-
-### Dependencies
+## Dependencies
 
 - xorriso (>= 1.5.4-2)
 - mtools (>= 4.0.33-1+really4.0.32-1build1)
